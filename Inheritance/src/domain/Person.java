@@ -1,3 +1,5 @@
+package domain;
+
 public class Person {
     protected String name;
     protected char genre;
@@ -14,7 +16,6 @@ public class Person {
         this.age = age;
         this.address = address;
     }
-
     public String getName() {
         return this.name;
     }
@@ -47,13 +48,9 @@ public class Person {
         this.address = address;
     }
 
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
-
     @Override
     public String toString() {
-        return "Person{" +
+        return "domain.Person{" +
                 "name='" + name + '\'' +
                 ", genre=" + genre +
                 ", age=" + age +
